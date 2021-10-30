@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" content="width=device-width,initial-scale=1">
+	<title>详细页</title>
+	<link rel="stylesheet" href="./css/style_details.css">
+	<script type="module" src="./js/rollBack.js"></script>
+	<!-- 实现滚动条 -->
+<!-- 
+	<script>
+		window.onload = function () {
+			var onav = document.getElementById('nav1');
+			var oul = document.getElementById('ul1');
+			var speed = 2;
+			oul.innerHTML += oul.innerHTML;
+			var oli = oul.getElementsByTagName('li');
+			oul.style.width = oli.length * 300 + 'px';
+
+			function move() {
+				if (oul.offsetLeft < -(oul.offsetWidth) / 2) {
+					oul.style.left = 0;
+				}
+				if (oul.offsetLeft > 0) {
+					oul.style.left = -(oul.offsetWidth / 2) + 'px';
+				}
+				oul.style.left = oul.offsetLeft + speed + 'px';
+			}
+			var timer1 = setInterval(move, 60);
+			onav.addEventListener('mouseout', function () {
+				timer1 = setInterval(move, 60);
+			}, false);
+			onav.addEventListener('mousemove', function () {
+				clearInterval(timer1);
+			}, false);
+		}
+	</script> -->
+
+</head>
+
+<body>
+	<div id="container">
+		<!-- 网页头部开始 -->
+		<div id="header">
+			<a href="index.html">
+				<img src="images/logo.png" alt="logo" style="width: 20%;">
+			</a>
+			<br>
+			<br>
+			<p style="text-align: center;color:#fff;font-size: 1.2em;">
+				<a href="index.html">Home</a>
+				&emsp;|&emsp;
+				<a href="#painter1">Claude·Monet</a>
+				&emsp;|&emsp;
+				<a href="#painter2">Édouard·Manet</a>
+				&emsp;| &emsp;
+				<a href="#painter3">Pierre·Auguste·Renoir</a>
+				&emsp;| &emsp;
+				<a href="details.html">More</a>
+				<br>
+				<br>
+			</p>
+		</div>
+		<!-- 网页的头部结束 -->
+
+		<!-- 网页主体部分开始 -->
+		<div id="box">
+			<!-- 第一个画家 -->
+			<div class="side_left" style="position: relative;">
+				<img style="width: 70px;" src="images/side.png" alt="side">
+				<div class="circle" id="circle1">
+					<img style="width: 70px;" src="images/circle.png" alt="circle">
+				</div>
+			</div>
+
+			<div id="painter1" class="painter">
+				<p class="years">1840 - 1926</p>
+				<p class="ChiName">克劳德·莫奈</p>
+				<p class="EngName">Claude · Monet</p>
+				<br>
+				<p class="content">
+					&emsp;&emsp;莫奈是印象主义的创始人之一，是印象主义大师中最有影响的一位。在有代表性的印象派画家中，唯有莫奈以其86岁的漫长人生始终如一的将创作热情倾注在印象派技法上。其他的印象派画家，都是短期的探索者。像虽然没有参加过印象派八次画展却被视为印象派的领袖和奠基人的画家马奈：而擅长于画人物的雷诺阿在他的艺术人生中，前期和后期是从事印象派探索时期，中间十几年的时间里，则将热情转向了古典主义。<br />
+					&emsp;&emsp;1874－1886年间，巴黎举办了八次印象派画展，毕沙罗参加了每一次画展，他曾说：“我的一生与印象主义的是完全符合的。”而莫奈第五、六次和最后一次均未参加展出。由于在这三次展览中的作品已经有悖于原来的创作手法。为了坚持信仰，莫奈拒绝参加展览以示反抗。这是他始终如一的坚持印象派信条的表现，也是莫奈在印象派中影响力最大的一个原因。<br />
+					&emsp;&emsp;莫奈常常可以从普通的风景中挖掘其魅力。他观察景物细致入微，对光线的变化十分敏锐。他可以就同一处场景画出十几幅作品。如《草垛》《睡莲》等。而这仅仅是为了表现同一场景的不同天气、光线下的不同表象，这是其他画家很难做到的。<br />
+					&emsp;&emsp;莫奈像个隐士，有时有很强的孤独感。这一方面由于他的性格使然，他生性沉默寡言，喜爱思索：另一方面，因为他是印象派中的先行者，当他不得不单枪匹马奋力前行的时候，自然有一种寂寞寥落的感觉。
+					<div id="nav1" class="nav">
+						<ul id="ul1" style="width: 1500px;">
+							<li><img class="pic" src="images/圣拉查尔火车站.jpg" alt="《圣拉查尔火车站》"></li>
+							<li><img class="pic" src="images/日出印象.jpg" alt="《日出·印象》"></li>
+							<li><img class="pic" src="images/翁费勒的塞纳河口.jpg" alt="《翁费勒的塞纳河口》"></li>
+							<li><img class="pic" src="images/圣拉查尔火车站.jpg" alt="《圣拉查尔火车站》"></li>
+							<li><img class="pic" src="images/日出印象.jpg" alt="《日出·印象》"></li>
+							<li><img class="pic" src="images/翁费勒的塞纳河口.jpg" alt="《翁费勒的塞纳河口》"></li>
+							<li><img class="pic" src="images/圣拉查尔火车站.jpg" alt="《圣拉查尔火车站》"></li>
+							<li><img class="pic" src="images/日出印象.jpg" alt="《日出·印象》"></li>
+							<li><img class="pic" src="images/翁费勒的塞纳河口.jpg" alt="《翁费勒的塞纳河口》"></li>
+						</ul>
+					</div>
+					<p class="introduction">《圣拉查尔火车站》</p>
+					<p class="introduction">《日出·印象》</p>
+					<p class="introduction">《翁费勒的塞纳河口》</p>
+				</p>
+			</div>
+			<!-- 第二个画家 -->
+			<div class="side_right" style="position: relative;">
+				<img style="width: 70px;" src="images/side.png" alt="side">
+				<div class="circle0" id="circle2">
+					<img style="width: 70px;" src="images/circle.png" alt="circle">
+				</div>
+			</div>
+			<div id="painter2" class="painter">
+				<p class="years">1832 - 1883</p>
+				<p class="ChiName">爱德华·马奈</p>
+				<p class="EngName">Édouard · Manet</p>
+				<br>
+				<p class="content">
+					&emsp;&emsp;马奈是法国印象主义画派中的著名画家，是亨利·凡汀·拉图尔的《巴迪侬室》画作中位于中间的那个人，他对欧洲绘画的发展有重要贡献；尽管他从来没有参加过印象派画家的联合展览，仍被认为是印象主义画派的奠基人，很早就被后来的印象派画家们视为大师。这些画家比马奈年轻10岁左右。尽管马奈得到了这个尊称，尽管他与这些年轻画家保持着友好关系并同他们一起外出写生，他却始终拒绝参加印象派组织的画展。<br />
+					&emsp;&emsp;马奈的成就主要体现在人物画方面，第一个将印象主义的光和色彩带进了人物画，开创了印象主义画风。马奈早年受过学院派的六年教育，后又研究许多历代大师的作品，他的画既有传统绘画坚实的造型，又有印象主义画派明亮、鲜艳、充满光感的色彩，可以说他是一个承上启下的重要画家。他的作品（尤其是肖像画）很自然地反映出了人物的性格和心理。《吹笛少年》用几乎没有影子的平面人物画法，表现人物的实在，从这里可以看到马奈的才气和自负感。此画明显带有日本浮世绘版画的影响。<br />
+					&emsp;&emsp;马奈并不分成印象派的色彩理论，与印象派之排斥黑色不同，马奈却是十分善于使用黑色的。它像乐队中的定音鼓，使整个画面的色彩响亮醒目而又各得其所。在瓦伦斯的肖像中，裙子的黑色正是起到了这种作用。1812年，马奈在巴提约尔街的画室成为青年画家向往和聚会的地方。后来成为印象画派成员的莫奈、德加、雷诺阿等人，经常在此聚会，马奈成为他们心目中的领袖。
+				</p>
+				<div class="nav">
+					<div class=wrap>
+						<a href="https://baike.baidu.com/item/%E7%99%BD%E8%89%B2%E7%89%A1%E4%B8%B9%E8%8A%B1/5348385" target="_blank">
+							<img class="picture" src="images/白色牡丹花.jpg" alt="《白色牡丹花》">
+							<div class="text">
+								<p class="aa">《白色牡丹花》</p>
+							</div>
+						</a>
+					</div>
+					<div class=wrap>
+						<a
+							href="https://baike.baidu.com/item/%E5%A5%B3%E7%A5%9E%E6%B8%B8%E4%B9%90%E5%8E%85%E7%9A%84%E5%90%A7%E5%8F%B0/1355104" target="_blank">
+							<img class="picture" src="images/女神游乐厅的吧台.jpg" alt="《女神游乐厅的吧台》">
+							<div class="text">
+								<p class="aa">《女神游乐厅的吧台》</p>
+							</div>
+						</a>
+					</div>
+					<div class=wrap>
+						<a href="https://baike.baidu.com/item/%E5%A5%A5%E6%9E%97%E5%8C%B9%E4%BA%9A/3560003" target="_blank">
+							<img class="picture" src="images/奥林匹亚.jpeg" alt="《奥林匹亚》">
+							<div class="text">
+								<p class="aa"> 《奥林匹亚》</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<p class="introduction" style="text-align: right;clear: left;">左：《白色牡丹花》</p>
+				<p class="introduction" style="text-align: right;clear: left;">中：《女神游乐厅的吧台》</p>
+				<p class="introduction" style="text-align: right;clear: left;">右：《奥林匹亚》</p>
+			</div>
+			<!-- 第三个画家 -->
+			<div class="side_left" style="position: relative;">
+				<img style="width: 70px;" src="images/side.png" alt="side">
+				<div class="circle" id="circle3">
+					<img style="width: 70px;" src="images/circle.png" alt="circle">
+				</div>
+			</div>
+			<div id="painter3" class="painter">
+				<p class="years">1841 - 1919</p>
+				<p class="ChiName">皮埃尔·奥古斯特·雷诺阿</p>
+				<p class="EngName">Pierre · Auguste · Renoir</p>
+				<br>
+				<p class="content">
+					&emsp;&emsp;雷诺阿出身平民，出生在法国巴黎利摩日一个穷裁缝的家里。他的性格气质都是接近平民的。他从无高傲的表现，在贝尔拉的酒家里，侍役们像对待同等地位的人那样跟他说话。他对模特儿的选择从不过于挑剔：“我只要有不反光的皮肤就行”，还有就是不要“像上流社会的女士那样涂脂抹粉的”。雷诺阿有着健康的、基本的趣味他在社交场合总是保持着一种沉默寡言、多愁善感的样子，一副阴郁的面孔。可是当雷诺阿画起画来，他的脸便立刻容光焕发，作画时他竟会哼出悦耳歌声。<br />
+					&emsp;&emsp;雷诺阿以画人物出名，这之中又以画甜美，悠闲的气氛还有丰满，明亮的脸和手最为经典。印象派中雷诺阿的特色在于描绘迷人的感觉，从他的画作中你很少感觉到苦痛或是宗教情怀，但常常能感受到家庭的温暖，如母亲或是长姐般的笑容。雷诺阿认为绘画并非科学性的分析光线，也并非巧心的安排布局，绘画是要带给观者愉悦，让绘画挂置的环境充满了画家想要的感觉。<br />
+					&emsp;&emsp;色彩、光线、生活，就是这三样东西激励着艺术家投身于绘画，倾注以全部的激情。他所表现的都是日常生活，以他最习惯的方法表现他最常见的面貌：一个看书的妇女，一对跳舞的男女，蒙马特高地顶端小酒馆露天舞场等等。
+				</p>
+				<div class="nav">
+					<div class=wrap>
+						<a href="https://baike.baidu.com/item/%E8%8E%AB%E5%A5%88%E5%A4%AB%E4%BA%BA%E5%83%8F/7639141">
+							<img class="picture" src="images/莫奈夫人像.jpeg" alt="《莫奈夫人像》">
+							<div class="text">
+								<p class="aa">《莫奈夫人像》</p>
+							</div>
+						</a>
+					</div>
+					<div class=wrap>
+						<a href="https://baike.baidu.com/item/%E9%9D%92%E8%9B%99%E5%A1%98/8294497">
+							<img class="picture" src="images/青蛙塘.jpeg" alt="《青蛙塘》">
+							<div class="text">
+								<p class="aa">《青蛙塘》</p>
+							</div>
+						</a>
+					</div>
+					<div class=wrap>
+						<a
+							href="https://baike.baidu.com/item/%E7%BA%A2%E7%A3%A8%E5%9D%8A%E7%9A%84%E8%88%9E%E4%BC%9A/5349358?fromtitle=%E7%85%8E%E9%A5%BC%E7%A3%A8%E5%9D%8A%E7%9A%84%E8%88%9E%E4%BC%9A&fromid=7646894">
+							<img class="picture" src="images/煎饼磨坊的舞会.jpeg" alt="《煎饼磨坊的舞会》">
+							<div class="text">
+								<p class="aa"> 煎饼磨坊的舞会》</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="white"></div>
+				<p class="introduction">左：《莫奈夫人像》</p>
+				<p class="introduction">中：《青蛙塘》</p>
+				<p class="introduction">右：《煎饼磨坊的舞会》</p>
+
+			</div>
+		</div>
+		<!-- 返回顶部图标 -->
+		<div id="back_top">
+			<img src="images/top.png" alt="top">
+		</div>
+		<!-- 网页主体部分结束 -->
+
+		<!-- 网页的尾部开始 -->
+		<div id="footer">
+			<p>&copy web, Beijing Foresty University</p>
+		</div>
+		<!-- 网页尾部结束 -->
+	</div>
+
+</body>
+
+</html>

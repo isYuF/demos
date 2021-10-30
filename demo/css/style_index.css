@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Chi;
+  src: url("./FZXiJinLJW.TTF");
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
+
+#header {
+  background-image: url(../images/header.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  float: left;
+  clear: both;
+  text-align: center;
+}
+
+#more {
+  float: left;
+  clear: both;
+  width: 1200px;
+  height: 80px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#footer {
+  background-image: url(../images/header.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  float: left;
+  clear: both;
+  line-height: 700%;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+#box {
+  float: left;
+  width: 1200px;
+  height: 2185px;
+}
+
+.allbox_place {
+  position: relative;
+  background-color: #54635a;
+  width: 1000px;
+  height: 480px;
+  margin: 50px 100px;
+  overflow: hidden;
+}
+
+.all_big_box {
+  position: absolute;
+  width: 3000px;
+  height: 480px;
+  left: 0;
+  top: 0;
+  transition: left 1s ease-in-out;
+}
+
+.all_box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #54635a;
+  width: 1000px;
+  height: 480px;
+}
+
+.content {
+  position: relative;
+  background-color: cornsilk;
+  width: 1200px;
+  height: 580px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+.content0 {
+  position: relative;
+  background-color: cornsilk;
+  width: 1200px;
+  height: 380px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+.BriefInDuct {
+  padding-left: 300px;
+  padding-right: 300px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+
+.first_box1 {
+  position: absolute;
+  left: 0px;
+  background-color: #94a6a2;
+  float: left;
+  width: 400px;
+  height: 580px;
+}
+
+.first_box2 {
+  position: absolute;
+  left: 400px;
+  background-color: #f0dedc;
+  float: left;
+  width: 800px;
+  height: 580px;
+}
+
+.first_boxpic {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  height: 360px;
+  width: 500px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+.first_text {
+  position: absolute;
+  width: 270px;
+  right: 40px;
+  top: 50px;
+  height: 380px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: ivory;
+}
+
+.first_painter {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: Chi;
+  height: 50px;
+  font-size: 30px;
+  color: ivory;
+}
+
+.second_box1 {
+  position: absolute;
+  float: left;
+  width: 140px;
+  height: 480px;
+  background-color: #f0dedc;
+}
+
+.second_box2 {
+  position: absolute;
+  float: left;
+  left: 140px;
+  width: 500px;
+  height: 480px;
+}
+
+.second_text {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 380px;
+  width: 400px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.second_boxpic {
+  position: absolute;
+  float: left;
+  left: 640px;
+  width: 400px;
+  height: 480px;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.second_painter {
+  position: absolute;
+  width: 60px;
+  left: 40px;
+  top: 10px;
+  font-family: Chi;
+  font-size: 32px;
+}
+
+.third_box1 {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: 0;
+  height: 340px;
+  width: 400px;
+  background-color: #54635a;
+}
+
+.third_painter {
+  position: absolute;
+  width: 30px;
+  left: 25px;
+  top: 5px;
+  font-family: Chi;
+  font-size: 25px;
+  color: #fff;
+}
+
+.third_text {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  width: 250px;
+  height: 200px;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.SelectBox {
+  position: absolute;
+  height: 50px;
+  width: 520px;
+  text-align: center;
+  top: 530px;
+  left: 340px;
+  z-index: 10;
+}
+
+button {
+  float: left;
+  border: 1px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: ghostwhite;
+  margin: 15px 55px;
+  cursor: pointer;
+}
+
+a:hover button {
+  background-color: grey;
+  transition: 0.3s;
+}
+
+#back_top {
+  height: 38px;
+  width: 38px;
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  display: none;
+}
+
+.Eng {
+  font-size: 15px;
+  text-align: center;
+}
+
+.Chi {
+  font-size: 25px;
+  text-align: center;
+  font-family: Chi;
+}
+
+.space {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}

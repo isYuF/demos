@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Chi;
+    src: url('./FZXiJinLJW.TTF');
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+#header {
+    background-image: url(../images/header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+#footer {
+    background-image: url(../images/header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    clear: both;
+    line-height: 700%;
+    font-size: 1em;
+    color: white;
+}
+
+#box {
+    width: 100%;
+    float: left;
+}
+
+.side_left {
+    padding-left: 6%;
+    float: left;
+    width: 8%;
+}
+
+.side_right {
+    padding-right: 6%;
+    float: right;
+    width: 8%;
+}
+
+.painter {
+    width: 80%;
+    padding: 5% 10%;
+}
+
+.years {
+    color: #145738;
+    font-size: 1em;
+}
+
+.ChiName {
+    color: #111;
+    font-size: 1.5em;
+    font-family: Chi;
+}
+
+.EngName {
+    color: #145738;
+    font-size: 1em;
+}
+
+.content {
+    text-align: justify;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.introduction {
+    font-size: 1em;
+    color: #7f7f7f;
+    width: 90%;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+.circle {
+    position: absolute;
+    left: 53%;
+    top: 13px;
+}
+
+.circle0 {
+    position: absolute;
+    left: 10%;
+    top: 13px;
+}
+
+#back_top {
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: none;
+}
+
+/* 以下为计时器效果用 */
+.nav {
+    float: left;
+    width: 920px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.nav ul li {
+    float: left;
+    width: 300px;
+    height: 260px;
+}
+
+.pic {
+    width: 90%;
+    float: left;
+    padding: 2%;
+}
+
+/* 滑动 */
+.wrap {
+    position: relative;
+    padding: 3px;
+    width: 300px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    top: 300px;
+    left: 18px;
+    width: 240px;
+    height: 300px;
+    padding: 15px;
+    transition: top 0.5s ease-in-out;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 160px;
+}
+
+.aa {
+    font-size: 1.3em;
+}
+
+.wrap:hover .text {
+    top: 18px;
+}
+
+.picture {
+    width: 270px;
+    float: left;
+    padding: 15px;
+}
