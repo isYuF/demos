@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/index_style.css">
+    <script type="text/javascript">
+    // 实现淡入淡出效果
+        window.onload = function(){
+            let index = 0;
+            let imgs = [document.getElementById("firstImg"),document.getElementById("secondImg"),document.getElementById("thirdImg")];
+            let length = 3;
+            let leftBtn = document.getElementById("change-img-left");
+            let rightBtn = document.getElementById("change-img-right");
+            let int = null;
+            
+
+            function next(){
+                let objSrc = imgs[index];
+                index = (index+1)%length;
+                let objDest = imgs[index];
+                move(objSrc,objDest);
+            }
+            function last(){
+                let objSrc = imgs[index];
+                index = (index-1+length)%length;
+                let objDest = imgs[index];
+                move(objSrc,objDest);
+            }
+
+            rightBtn.onclick = function(){
+                clearInterval(int);
+                next();
+                int = setInterval(next,5000);
+            }
+            leftBtn.onclick = function(){
+                clearInterval(int);
+                last();
+                int = setInterval(next,5000);
+            }
+            function move(objSrc,objDest,callback){
+                objSrc.style.opacity = 0;
+                objDest.style.opacity = 1;
+            }
+
+            int = setInterval(next,5000);
+        }
+    </script> 
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+<!-- 需要包括顶部黑框框和顶部的logo导航区 -->
+            <div class="header-bar">
+                <div class="header-container">
+                    <div class="header-left">
+                        <a href="">小米商城</a><span class="seperate">|</span><a href="">MIUI</a><span class="seperate">|</span><a href="">IoT</a><span class="seperate">|</span><a href="">云服务</a><span class="seperate">|</span><a href="">天星数科</a><span class="seperate">|</span><a href="">有品</a><span class="seperate">|</span><a href="">小爱开放平台</a><span class="seperate">|</span><a href="">企业团购</a><span class="seperate">|</span><a href="">资质证照</a><span class="seperate">|</span><a href="">协议规则</a><span class="seperate">|</span><a href="">下载app</a><span class="seperate">|</span><a href="">智能生活</a><span class="seperate">|</span><a href="">Selection Location</a>
+                    </div>
+                    <div class="header-right">
+                        <a href="">购物车</a>  
+                    </div>
+                    <div class="header-mid">
+                        <a href="">登录</a><span class="seperate">|</span><a href="">注册</a><span class="seperate">|</span><a href="">消息通知</a>
+                    </div>
+                </div>
+            </div>
+               
+            <div class="header-main">
+                <div class="header-main-container">
+                    <a href="" title="小米官网" id="logo"></a>
+                    <div class="main-list">
+                        <ul>
+                            <li>
+                                <a href="">Xiaomi手机</a>
+                            </li>
+                            <li>
+                                <a href="">Redmi红米</a>
+                            </li>
+                            <li>
+                                <a href="">电视</a>
+                            </li>
+                            <li>
+                                <a href="">笔记本</a>
+                            </li>
+                            <li>
+                                <a href="">平板</a>
+                            </li>
+                            <li>
+                                <a href="">家电</a>
+                            </li>
+                            <li>
+                                <a href="">路由器</a>
+                            </li>
+                            <li>
+                                <a href="">智能硬件</a>
+                            </li>
+                            <li>
+                                <a href="">服务</a>
+                            </li>
+                            <li>
+                                <a href="">社区</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="get">
+                        <input id="inputText" type="text" value="商品">
+                        <button value="">🔍</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="nav-main">
+            <div class="nav-top">
+                <div class="nav-select">
+                    <ul>
+                        <li>手机</li>
+                        <li>电视</li>
+                        <li>笔记本 平板</li>
+                        <li>家电</li>
+                        <li>出行 穿戴</li>
+                        <li>智能 路由器</li>
+                        <li>电源 配件</li>
+                        <li>健康 儿童</li>
+                        <li>耳机 音箱</li>
+                        <li>生活 箱包</li>
+                    </ul>
+                </div>
+                
+                <div id="change-img-left"></div>
+                <div id="change-img-right"></div>
+                <div id="imgBox">
+                    <div class="img-roll" id="firstImg" ></div>
+                    <div class="img-roll" id="secondImg" ></div>
+                    <div class="img-roll" id="thirdImg" ></div>
+                </div>
+            </div>
+            <div class="nav-down">
+                <div class="nav-down-left">
+                    <ul>
+                        <li><a href=""><img src="./img/little/82abdba456e8caaea5848a0cddce03db.png" alt="">保障服务</a></li>
+                        <li><a href=""><img src="./img/little/806f2dfb2d27978e33fe3815d3851fa3.png" alt="">企业团购</a></li>
+                        <li><a href=""><img src="./img/little/eded6fa3b897a058163e2485532c4f10.png" alt="">F码通道</a></li>
+                        <li><a href=""><img src="./img/little/43a3195efa6a3cc7662efed8e7abe8bf.png" alt="">米粉卡</a></li>
+                        <li><a href=""><img src="./img/little/f4846bca6010a0deb9f85464409862af.png" alt="">以旧换新</a></li>
+                        <li><a href=""><img src="./img/little/9a76d7636b08e0988efb4fc384ae497b.png" alt="">话费充值</a></li>
+                    </ul>
+                </div>
+                <div class="nav-down-right">
+                    <ul>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="real-show">
+                <div class="main-content">
+                    <div  class="title">
+                        <span>手机</span>
+                        <div>
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+                    <div class="img-content">
+                        <div class="img-content-left">
+                            <a href=""><img src="" alt=""></a>
+                        </div>
+                        <div class="img-content-right">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href=""><img class="big-img" src="./img/big/f334fbd05d5681bb838fefd1c815d88c.webp" alt=""></a>
+            </div>
+            <!-- 具体的商品展示区 -->
+            <!-- 有不同主题的商品和大图片 -->
+        </div>
+
+        <div class="footer">
+            <div class="footer-service">
+                <!-- 简单 -->
+                <ul>
+                    <li>
+                        <a href="">预约维修服务</a>
+                    </li>
+                    <li>
+                        <a href="">7天无理由退货</a>
+                    </li>
+                    <li>
+                        <a href="">15天免费换货</a>
+                    </li>
+                    <li>
+                        <a href="">满69包邮</a>
+                    </li>
+                    <li>
+                        <a href="">520余家售后网点</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-link"></div>
+    
+            <div class="footer-info"></div>
+        </div>
+    </div>
+</body>
+</html>
